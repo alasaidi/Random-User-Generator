@@ -5,7 +5,7 @@ export const userResources = async (query = "") => {
   try {
     const data = await fetch(url);
     const response = await data.json();
-    return response.results;
+    return response;
   } catch (err) {
     console.log(err);
   }
