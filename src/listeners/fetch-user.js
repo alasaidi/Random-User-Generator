@@ -1,5 +1,5 @@
 import { chooseUser } from "../handlers/choose-user.js";
 
-export const fetchUser = (id) => {
+export const fetchUser = async (id) => {
   document.getElementById(id).addEventListener("click", chooseUser);
 };
