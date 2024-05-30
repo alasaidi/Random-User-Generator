@@ -9,7 +9,7 @@ export const renderUser = (Data, root) => {
     // Create the user profile container
     const userProfile = document.createElement("div");
     userProfile.className = "user-profile";
-
+    userProfile.setAttribute("data-age", result.dob.age);
     // Create and append the image element
     const img = document.createElement("img");
     img.src = result.picture.medium;

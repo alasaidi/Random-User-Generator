@@ -1,3 +1,5 @@
+import { sortUserByAge } from "../handlers/sort-user-by-age.js";
+
 export const sortUser = (id = "") => {
-  document.getElementById(id).addEventListener("click", () => console.log("clicked"));
+  document.getElementById(id).addEventListener("click", sortUserByAge);
 };
