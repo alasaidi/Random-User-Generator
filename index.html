@@ -1,42 +1,41 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Random User Generator</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./style/style.css" />
-  <title>Random User Generator</title>
-</head>
-
-<body>
-  <header>
-    <h1>Random User Generator App</h1>
-  </header>
-  <div class="main-conatiner">
-    <p>Enter the number of the user you want to generate</p>
-    <input type="text" value="" />
-    <button id="searchBtn">Generate Users!</button>
-    <button id="sortBtn">sort Users by age!</button>
-    <input type="text" value="" />
-    <button id="filterBtn">Filter Users!</button>
-  </div>
-  <div class="container" id="users">
-    <div class="user-profile">
-      <img src="./style/placeholder-image.jpg" alt="User Image" />
-      <h3>John Doe</h3>
-      <p>City, Country</p>
-      <p>john.doe@example.com</p>
-      <p>+1 (555) 123-4567</p>
+  <body>
+    <header>
+      <h1>Random User Generator App</h1>
+    </header>
+    <div class="main-conatiner">
+      <p>Enter the number of the user you want to generate</p>
+      <input type="text" value="" />
+      <button id="searchBtn">Generate Users!</button>
+      <button id="sortBtn">sort Users by age!</button>
+      <input type="text" value="" />
+      <button id="filterBtn">Filter Users!</button>
     </div>
-    <div class="user-profile">
-      <img src="./style/placeholder-image.jpg" alt="User Image" />
-      <h3>Jane Smith</h3>
-      <p>Town, State</p>
-      <p>jane.smith@example.com</p>
-      <p>+1 (555) 987-6543</p>
+    <div class="container" id="users">
+      <div class="user-profile">
+        <img src="./style/placeholder-image.jpg" alt="User Image" />
+        <h3>John Doe</h3>
+        <p>City, Country</p>
+        <p>john.doe@example.com</p>
+        <p>+1 (555) 123-4567</p>
+      </div>
+      <div class="user-profile">
+        <img src="./style/placeholder-image.jpg" alt="User Image" />
+        <h3>Jane Smith</h3>
+        <p>Town, State</p>
+        <p>jane.smith@example.com</p>
+        <p>+1 (555) 987-6543</p>
+      </div>
     </div>
-  </div>
-  <script type="module" src="./src/init.js"></script>
-</body>
-
+    <div class="pagination" id="footer"></div>
+    <script type="module" src="./src/init.js"></script>
+  </body>
 </html>

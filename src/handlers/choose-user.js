@@ -1,15 +1,17 @@
-import { userResources } from "../api-calls/user-resources.js";
+import { paginationEvent } from "../components/pagination-page.js";
+import { pagination } from "../components/pagination.js";
 import { renderUser } from "../components/render-user.js";
 
 export const chooseUser = async (e) => {
   const numberOfUsers = e.currentTarget.previousElementSibling.value;
 
   const root = document.getElementById("users");
+  const footer = document.getElementById("footer");
   root.innerHTML = "";
   try {
-    const users = await userResources(numberOfUsers);
+    const users = await paginationEvent("1", root);
 
-    const userElement = renderUser(users, root);
+    pagination(numberOfUsers, footer, root);
   } catch (err) {
     console.error(err);
   }

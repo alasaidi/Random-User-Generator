@@ -1,7 +1,7 @@
 import { Base_Url } from "../config.js";
 
-export const userResources = async (query = "") => {
-  const url = `${Base_Url}/?results=${query}`;
+export const userResources = async (page = "1", query = "25") => {
+  const url = `${Base_Url}?page=${page}&results=${query}&seed=abc`;
   try {
     const data = await fetch(url);
     const response = await data.json();

@@ -31,7 +31,10 @@
   color: #666;
   word-wrap: break-word;
 }
-
+.pagination {
+  text-align: center;
+  overflow: auto;
+}
 /* Additional styles for the grid layout */
 .container {
   display: grid;
