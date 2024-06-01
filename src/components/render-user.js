@@ -1,5 +1,6 @@
-export const renderUser = (Data, root) => {
+export const renderUser = (Data) => {
   // Clear the root element
+  const root = document.getElementById("users");
   root.innerHTML = "";
 
   // Map through the data and create DOM elements
