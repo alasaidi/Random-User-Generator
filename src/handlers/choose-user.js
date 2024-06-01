@@ -6,12 +6,11 @@ export const chooseUser = async (e) => {
   const numberOfUsers = e.currentTarget.previousElementSibling.value;
 
   const root = document.getElementById("users");
-  const footer = document.getElementById("footer");
-  root.innerHTML = "";
-  try {
-    const users = await paginationEvent("1", root);
 
-    pagination(numberOfUsers, footer, root);
+  try {
+    const users = await paginationEvent("1");
+    console.log(users);
+    pagination(numberOfUsers);
   } catch (err) {
     console.error(err);
   }

@@ -14,6 +14,7 @@ export const filteredUsers = (e) => {
     });
     if (filteredUsers.length === 0) {
       alert("search result is empty !");
+      e.currentTarget.previousElementSibling.value = "";
     } else {
       const root = document.getElementById("users");
       root.innerHTML = "";

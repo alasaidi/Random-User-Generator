@@ -1,6 +1,6 @@
 import { Base_Url } from "../config.js";
 
-export const userResources = async (page = "1", query = "25") => {
+export const userResources = async (page = "1", query = "8") => {
   const url = `${Base_Url}?page=${page}&results=${query}&seed=abc`;
   try {
     const data = await fetch(url);
